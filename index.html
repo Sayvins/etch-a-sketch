@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="kaka.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allan&display=swap" rel="stylesheet">
+    <title>Etch-A-Sketch</title>
+</head>
+<body>
+    <div class="container">
+        <div class="title">Sketchpad</div>
+            <div class="mode">Mode: Coloring</div>
+                <div class="content"></div>
+                    <div class="board"></div>
+                    <div class="buttons">
+                        <button class="white button" onclick="colorOnClick('white')">Erasor</button>
+                        <button class="black button" onclick="colorOnClick('black')">Black</button>
+                        <button class="random button" onclick="colorOnClick('random')">Random</button>
+                        <button class="gray button" onclick="colorOnClick('gray')">Gray</button>
+                        <button class="reset" onclick="resetBoard()">Reset</button>
+                    </div>
+                    <div class="divsize"> 
+                        <input class="input" type="text" placeholder="Size of board" value="16" onchange="changeSize(this.value)">
+                        <button class="size ">Set size</button>
+                        <div class="error"></div>
+                    </div>
+    </div>
+    <footer class="footer">
+        <p class="footer-text">Copyright &copy; 2022 by Sayvind</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
